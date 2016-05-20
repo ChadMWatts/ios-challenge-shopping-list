@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8887330AA4586FA0D1DF4D9D1A4F2F0764473949",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8887330AA4586FA0D1DF4D9D1A4F2F0764473949" : 0,
+    "9F5BAEDE25D7BDD39F2889B5FB02A7AFF13D0B15" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3C852088-BAC0-4C5A-B712-A6442D36E0FD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8887330AA4586FA0D1DF4D9D1A4F2F0764473949" : "ios-challenge-shopping-list\/",
+    "9F5BAEDE25D7BDD39F2889B5FB02A7AFF13D0B15" : "..\/Modules%20folder\/Module%2012"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ShoppingList",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ShoppingList.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ChadMWatts\/ios-challenge-shopping-list.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8887330AA4586FA0D1DF4D9D1A4F2F0764473949"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ChadMWatts\/Module-12.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9F5BAEDE25D7BDD39F2889B5FB02A7AFF13D0B15"
+    }
+  ]
+}
