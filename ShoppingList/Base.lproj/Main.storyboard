@@ -28,6 +28,10 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rpm-ui-r7c">
+                                            <rect key="frame" x="567" y="9" width="25" height="25"/>
+                                            <state key="normal" title="Button"/>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="KCn-Z1-FVN" secondAttribute="trailing" constant="85" id="21q-CA-xLg"/>

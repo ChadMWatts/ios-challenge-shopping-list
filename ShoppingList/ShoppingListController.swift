@@ -51,7 +51,7 @@ class ShoppingListController {
     func isComplete(ShoppingList: ShoppingList) {
         
         shoppingList.isComplete = !shoppingList.isComplete.boolValue
-        
+    
     }
     
     func saveToPersistentStorage() {
