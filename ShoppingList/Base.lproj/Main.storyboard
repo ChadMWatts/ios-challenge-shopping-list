@@ -21,10 +21,21 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e46-ix-UBV" id="tbJ-d9-F0n">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCn-Z1-FVN">
+                                            <rect key="frame" x="8" y="11" width="499" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="KCn-Z1-FVN" secondAttribute="trailing" constant="85" id="21q-CA-xLg"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="KCn-Z1-FVN" secondAttribute="bottom" constant="3" id="asP-kq-12y"/>
+                                        <constraint firstItem="KCn-Z1-FVN" firstAttribute="top" secondItem="tbJ-d9-F0n" secondAttribute="topMargin" constant="3" id="gvl-cq-tq6"/>
+                                        <constraint firstItem="KCn-Z1-FVN" firstAttribute="leading" secondItem="tbJ-d9-F0n" secondAttribute="leadingMargin" id="oGv-FD-v86"/>
+                                    </constraints>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="cBj-if-U2T" kind="show" identifier="fromDetailSegue" id="6xw-dC-6yC"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -33,46 +44,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="ShoppingList" id="PJg-tb-tXt">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Mkv-gh-dUW">
-                            <connections>
-                                <segue destination="cBj-if-U2T" kind="show" identifier="toDetailSegue" id="bST-J8-FSy"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Mkv-gh-dUW"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MII-k0-uJt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2120" y="255"/>
-        </scene>
-        <!--Detail Shopping List Table View Controller-->
-        <scene sceneID="Lef-Tm-3Zx">
-            <objects>
-                <viewController id="cBj-if-U2T" customClass="DetailShoppingListTableViewController" customModule="ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uBB-qH-16F"/>
-                        <viewControllerLayoutGuide type="bottom" id="86T-it-za9"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="DCq-cK-8ro">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NQ1-As-tZE">
-                                <rect key="frame" x="20" y="74" width="540" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="NQ1-As-tZE" firstAttribute="top" secondItem="uBB-qH-16F" secondAttribute="bottom" constant="10" id="CxF-B4-o8N"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="NQ1-As-tZE" secondAttribute="trailing" constant="20" id="pWW-QT-QWT"/>
-                            <constraint firstItem="NQ1-As-tZE" firstAttribute="leading" secondItem="DCq-cK-8ro" secondAttribute="leadingMargin" id="t7f-IX-leE"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fzV-dG-tsr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2861" y="255"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pKF-50-4zr">
@@ -93,7 +70,4 @@
             <point key="canvasLocation" x="1308" y="255"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="bST-J8-FSy"/>
-    </inferredMetricsTieBreakers>
 </document>

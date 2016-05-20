@@ -13,7 +13,6 @@
 		1A4A23271CCA8D2C003A4350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4A23251CCA8D2C003A4350 /* LaunchScreen.storyboard */; };
 		4C06E9051CEF629E0095D261 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C06E9031CEF629E0095D261 /* Model.xcdatamodeld */; };
 		4C06E9071CEF659D0095D261 /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06E9061CEF659D0095D261 /* ShoppingListTableViewController.swift */; };
-		4C06E9091CEF65C80095D261 /* DetailShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06E9081CEF65C80095D261 /* DetailShoppingListTableViewController.swift */; };
 		4C06E90D1CEF662C0095D261 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06E90C1CEF662C0095D261 /* Stack.swift */; };
 		4C06E9121CEF68870095D261 /* ShoppingList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06E9101CEF68870095D261 /* ShoppingList+CoreDataProperties.swift */; };
 		4C06E9131CEF68870095D261 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06E9111CEF68870095D261 /* ShoppingList.swift */; };
@@ -29,7 +28,6 @@
 		1A4A23281CCA8D2C003A4350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C06E9041CEF629E0095D261 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4C06E9061CEF659D0095D261 /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewController.swift; sourceTree = "<group>"; };
-		4C06E9081CEF65C80095D261 /* DetailShoppingListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailShoppingListTableViewController.swift; sourceTree = "<group>"; };
 		4C06E90C1CEF662C0095D261 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = "../../../Modules folder/Module 12/PlaylistNSUserDefaults/Stack.swift"; sourceTree = "<group>"; };
 		4C06E9101CEF68870095D261 /* ShoppingList+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShoppingList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4C06E9111CEF68870095D261 /* ShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
@@ -82,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				4C06E9061CEF659D0095D261 /* ShoppingListTableViewController.swift */,
-				4C06E9081CEF65C80095D261 /* DetailShoppingListTableViewController.swift */,
 			);
 			name = "view Controllers";
 			sourceTree = "<group>";
@@ -169,7 +166,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C06E9091CEF65C80095D261 /* DetailShoppingListTableViewController.swift in Sources */,
 				4C06E9121CEF68870095D261 /* ShoppingList+CoreDataProperties.swift in Sources */,
 				4C06E9131CEF68870095D261 /* ShoppingList.swift in Sources */,
 				4C06E90D1CEF662C0095D261 /* Stack.swift in Sources */,
