@@ -18,7 +18,8 @@ class ShoppingList: NSManagedObject {
         
         self.init(entity: entity, insertIntoManagedObjectContext: context) {
             
-            
+            self.title = title
+            self.isComplete = isComplete
         }
     }
     

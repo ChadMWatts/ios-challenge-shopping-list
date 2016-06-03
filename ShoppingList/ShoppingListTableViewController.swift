@@ -10,10 +10,9 @@ import UIKit
 
 class ShoppingListTableViewController: UITableViewController {
     
-    var item: Item?
+    var item: [Item] = []
     
-    @IBOutlet weak var itemLable: UILabel!
-    @IBOutlet weak var checkButton: UIButton!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +33,7 @@ class ShoppingListTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -44,9 +43,9 @@ class ShoppingListTableViewController: UITableViewController {
 
     @IBAction func checkButtonTapped(sender: AnyObject) {
     }
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("SwitchCell", forIndexPath: indexPath)
 
         // Configure the cell...
 
@@ -57,6 +56,7 @@ class ShoppingListTableViewController: UITableViewController {
     
     // MARK: - Navigation
 
+    /*
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
