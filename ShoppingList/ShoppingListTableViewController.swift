@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShoppingListTableViewController: UITableViewController {
+class ShoppingListTableViewController: UITableViewController, SwitchCellDelegate {
     
     var item: [Item] = []
     
@@ -17,11 +17,7 @@ class ShoppingListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+      // let completedItem = ShoppingListController.sharedController.completedItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,10 +27,6 @@ class ShoppingListTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 
-    }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -42,30 +34,29 @@ class ShoppingListTableViewController: UITableViewController {
     }
 
     @IBAction func checkButtonTapped(sender: AnyObject) {
+        
+        
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("SwitchCell", forIndexPath: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("SwitchCell", forIndexPath: indexPath) as?
+        SwitchCell ?? SwitchCell()
+        
+      
         return cell
     }
 
-    
-    
-    // MARK: - Navigation
-
-    /*
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
 func updateWithItem(item: Item) {
     
 }
+
+func switchValueChanged(cell: SwitchCell) {
+    
+    guard let indexPath = tableView.indexPathForCell(cell) else {return}
+}
+
+
+

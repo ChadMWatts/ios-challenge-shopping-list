@@ -1,8 +1,8 @@
 //
-//  ShoppingList+CoreDataProperties.swift
+//  Item+CoreDataProperties.swift
 //  ShoppingList
 //
-//  Created by Chad Watts on 5/27/16.
+//  Created by Chad Watts on 6/3/16.
 //  Copyright © 2016 DevMountain. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -12,9 +12,9 @@
 import Foundation
 import CoreData
 
-extension ShoppingList {
+extension Item {
 
-    @NSManaged var title: String?
-    @NSManaged var isComplete: NSNumber?
+    @NSManaged var item: String
+    @NSManaged var isComplete: NSNumber
 
 }

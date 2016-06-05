@@ -15,17 +15,17 @@ class SwitchCell: UITableViewCell {
     
     weak var delegate = SwitchCellDelegate?()
     
-}
-
-func updateWithItem(item: Item) {
-    
-    itemLabel.text = Item.name
-    checkButton.on = isComplete
-    
-    
+    func updateWithItem(item: Item) {
+        
+        itemLabel.text = Item.name
+        checkButton.on = Item.isComplete
+        
+    }
+   
 }
 
 protocol SwitchCellDelegate: class {
     
-    func switchCellValueChanged(cell: SwitchCell)
+    func switchValueChanged(cell: SwitchCell)
 }
+
