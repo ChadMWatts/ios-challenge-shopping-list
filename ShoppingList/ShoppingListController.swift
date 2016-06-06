@@ -16,8 +16,8 @@ class ShoppingListController {
     
     init() {
         
-        let request = NSFetchRequest(entityName: "shoppingList")
-        let sortDiscriptor1 = NSSortDescriptor(key: "didRead", ascending: false)
+        let request = NSFetchRequest(entityName: "Item")
+        let sortDiscriptor1 = NSSortDescriptor(key: "isComplete", ascending: false)
         
         request.sortDescriptors = [sortDiscriptor1]
         fetchedResultsController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: Stack.sharedStack.managedObjectContext, sectionNameKeyPath: "isComplete", cacheName: nil)
@@ -26,14 +26,16 @@ class ShoppingListController {
         
     }
     
-    func addItem(title: String) {
+    func addItem(item: String) {
         
-        _ = ShoppingList(title: title, isComplete: isComplete)
+        _ = ItemList(item: item)
         saveToPersistentStorage()
     }
     
     func removeItem() {
         
+        let moc = Stack.sharedStack.managedObjectContext
+        moc.deletedObjects(ItemList)
         saveToPersistentStorage()
     }
     

@@ -17,7 +17,7 @@
 		4CF10B7C1D02220800573C21 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF10B7B1D02220800573C21 /* Stack.swift */; };
 		4CF10B7F1D02330600573C21 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CF10B7D1D02330600573C21 /* Model.xcdatamodeld */; };
 		4CF10B821D0233CF00573C21 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF10B801D0233CF00573C21 /* Item+CoreDataProperties.swift */; };
-		4CF10B831D0233CF00573C21 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF10B811D0233CF00573C21 /* Item.swift */; };
+		4CF10B831D0233CF00573C21 /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF10B811D0233CF00573C21 /* ItemList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		4CF10B7B1D02220800573C21 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		4CF10B7E1D02330600573C21 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4CF10B801D0233CF00573C21 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		4CF10B811D0233CF00573C21 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		4CF10B811D0233CF00573C21 /* ItemList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				4CF10B801D0233CF00573C21 /* Item+CoreDataProperties.swift */,
-				4CF10B811D0233CF00573C21 /* Item.swift */,
+				4CF10B811D0233CF00573C21 /* ItemList.swift */,
 				4CF10B7D1D02330600573C21 /* Model.xcdatamodeld */,
 			);
 			name = Model;
@@ -189,7 +189,7 @@
 				1A4A231D1CCA8D2C003A4350 /* AppDelegate.swift in Sources */,
 				4CEE121B1CF8A4E90019FD39 /* ShoppingListController.swift in Sources */,
 				4CF10B7C1D02220800573C21 /* Stack.swift in Sources */,
-				4CF10B831D0233CF00573C21 /* Item.swift in Sources */,
+				4CF10B831D0233CF00573C21 /* ItemList.swift in Sources */,
 				4CF10B791D01E37600573C21 /* SwitchCell.swift in Sources */,
 				4CEE12181CF8A3960019FD39 /* ShoppingListTableViewController.swift in Sources */,
 				4CF10B7F1D02330600573C21 /* Model.xcdatamodeld in Sources */,

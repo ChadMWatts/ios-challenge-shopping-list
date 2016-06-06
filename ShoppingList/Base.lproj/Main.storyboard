@@ -3,15 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Title-->
         <scene sceneID="icm-Bz-DtQ">
             <objects>
-                <viewController id="gax-cA-4ID" sceneMemberID="viewController">
+                <viewController id="gax-cA-4ID" customClass="ShoppingListTableViewController" customModule="ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3BC-lH-09Q"/>
                         <viewControllerLayoutGuide type="bottom" id="unW-GS-h4T"/>
@@ -31,33 +29,31 @@
                                             <rect key="frame" x="0.0" y="0.0" width="590" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Es-qe-2zT">
-                                                    <rect key="frame" x="8" y="11" width="544" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4PJ-3W-gtj">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4PJ-3W-gtj">
                                                     <rect key="frame" x="537" y="11" width="25" height="24"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="25" id="PyB-fO-qsP"/>
+                                                        <constraint firstAttribute="width" constant="25" id="W7M-8s-wEM"/>
                                                     </constraints>
                                                     <state key="normal" title="Button" image="incomplete"/>
                                                 </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aiU-49-XRS">
+                                                    <rect key="frame" x="8" y="7" width="521" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="4PJ-3W-gtj" firstAttribute="baseline" secondItem="5Es-qe-2zT" secondAttribute="firstBaseline" id="Fd8-Te-9tS"/>
-                                                <constraint firstItem="4PJ-3W-gtj" firstAttribute="firstBaseline" secondItem="5Es-qe-2zT" secondAttribute="baseline" id="Qwq-HU-56k"/>
-                                                <constraint firstItem="4PJ-3W-gtj" firstAttribute="trailing" secondItem="kQ4-R3-1x0" secondAttribute="trailingMargin" id="TGA-Lk-gbu"/>
-                                                <constraint firstItem="4PJ-3W-gtj" firstAttribute="leading" secondItem="5Es-qe-2zT" secondAttribute="trailing" constant="5" id="dhl-Ky-ubz"/>
-                                                <constraint firstItem="4PJ-3W-gtj" firstAttribute="centerY" secondItem="5Es-qe-2zT" secondAttribute="centerY" id="hIJ-te-byI"/>
-                                                <constraint firstItem="4PJ-3W-gtj" firstAttribute="centerY" secondItem="kQ4-R3-1x0" secondAttribute="centerY" id="mUx-3h-a8H"/>
-                                                <constraint firstItem="4PJ-3W-gtj" firstAttribute="top" secondItem="kQ4-R3-1x0" secondAttribute="topMargin" constant="1" id="wY6-yv-5YD"/>
+                                                <constraint firstItem="4PJ-3W-gtj" firstAttribute="bottom" secondItem="kQ4-R3-1x0" secondAttribute="bottomMargin" id="7vV-KW-O6y"/>
+                                                <constraint firstItem="aiU-49-XRS" firstAttribute="centerY" secondItem="kQ4-R3-1x0" secondAttribute="centerY" id="Awj-YE-QH8"/>
+                                                <constraint firstItem="aiU-49-XRS" firstAttribute="leading" secondItem="kQ4-R3-1x0" secondAttribute="leadingMargin" id="LQE-yv-LSZ"/>
+                                                <constraint firstItem="4PJ-3W-gtj" firstAttribute="top" secondItem="kQ4-R3-1x0" secondAttribute="topMargin" constant="3" id="hsM-iL-Avj"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="4PJ-3W-gtj" secondAttribute="trailing" constant="20" id="mH9-nn-F0A"/>
+                                                <constraint firstItem="4PJ-3W-gtj" firstAttribute="leading" secondItem="aiU-49-XRS" secondAttribute="trailing" constant="8" symbolic="YES" id="vlO-Gk-CD7"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="checkButton" destination="4PJ-3W-gtj" id="bEc-nP-gxP"/>
-                                            <outlet property="itemLable" destination="5Es-qe-2zT" id="BPw-IW-MlQ"/>
+                                            <outlet property="itemTextField" destination="aiU-49-XRS" id="xdN-XL-ocV"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -75,11 +71,17 @@
                             <constraint firstItem="unW-GS-h4T" firstAttribute="top" secondItem="RxJ-T0-rEO" secondAttribute="bottom" constant="5" id="orZ-NY-jTd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="J3C-4q-r2W"/>
+                    <navigationItem key="navigationItem" title="Title" id="J3C-4q-r2W">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="NBq-TO-uz5">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="gax-cA-4ID" id="dEo-ze-Gdf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DxI-bX-9Ie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704" y="210"/>
+            <point key="canvasLocation" x="1744" y="210"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="F9m-x0-p9W">

@@ -12,7 +12,7 @@
 import Foundation
 import CoreData
 
-extension Item {
+extension ItemList {
 
     @NSManaged var item: String
     @NSManaged var isComplete: NSNumber

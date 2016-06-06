@@ -10,16 +10,26 @@ import UIKit
 
 class SwitchCell: UITableViewCell {
 
-    @IBOutlet weak var itemLabel: UILabel!
+    @IBOutlet weak var itemTextField: UITextField!
     @IBOutlet weak var checkButton: UIButton!
     
-    weak var delegate = SwitchCellDelegate?()
+    weak var delegate = SwitchCellDelegate?
     
     func updateWithItem(item: Item) {
         
-        itemLabel.text = Item.name
-        checkButton.on = Item.isComplete
+        itemTextField.text = item.item
+        isCompleteValueChanged(item.isComplete.boolValue)
         
+    }
+    
+    func isCompleteValueChanged(value: Bool) {
+        
+        if value == true {
+            
+            checkButton.imageView?.image = UIImage(named: "Complete")
+        } else {
+            checkButton.imageView?.image = UIImage(named: "InComplete")
+        }
     }
    
 }

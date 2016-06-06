@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 
-class Item: NSManagedObject {
+class ItemList: NSManagedObject {
         
         convenience init?(item: String, isComplete: Bool, context: NSManagedObjectContext = Stack.sharedStack.managedObjectContext) {
             
