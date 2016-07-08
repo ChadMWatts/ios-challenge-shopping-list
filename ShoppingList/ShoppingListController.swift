@@ -32,10 +32,10 @@ class ShoppingListController {
         saveToPersistentStorage()
     }
     
-    func removeItem() {
+    func removeItem(itemList: ItemList) {
         
         let moc = Stack.sharedStack.managedObjectContext
-        moc.deletedObjects(ItemList)
+        moc.deleteObject(itemList)
         saveToPersistentStorage()
     }
     
