@@ -2,14 +2,16 @@
 //  ShoppingListTableViewController.swift
 //  ShoppingList
 //
-//  Created by Chad Watts on 5/27/16.
+//  Created by Chad Watts on 7/8/16.
 //  Copyright © 2016 DevMountain. All rights reserved.
 //
 
+import CoreData
 import UIKit
 
-class ShoppingListTableViewController: UITableViewController {
+class ShoppingListTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
     
+    var item = Item
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,10 +92,10 @@ class ShoppingListTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
-            guard let itemList = ShoppingListController.sharedController.fetchedResultsController.objectAtIndexPath(indexPath) as? ShoppingList else { return }
-            ShoppingListController.sharedInstance.removeShoppingItem(itemList)
             
-            // Delete the row from the table view
+            guard let itemList = ShoppingListController.sharedController.fetchedResultsController.objectAtIndexPath(indexPath) as? ItemList else {return}
+            
+            ShoppingListController.sharedController.removeItem(item)
             
         }
         

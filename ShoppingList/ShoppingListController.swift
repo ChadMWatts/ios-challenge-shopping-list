@@ -2,7 +2,7 @@
 //  ShoppingListController.swift
 //  ShoppingList
 //
-//  Created by Chad Watts on 5/27/16.
+//  Created by Chad Watts on 7/8/16.
 //  Copyright © 2016 DevMountain. All rights reserved.
 //
 
